@@ -221,3 +221,20 @@ document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{state.tab=b.d
 .how-section .landing-inner{text-align:center!important}.how-section .landing-lead{margin-left:auto!important;margin-right:auto!important}.how-section .flow{justify-content:center!important;margin-left:auto!important;margin-right:auto!important}.flow-step span{display:grid!important;place-items:center!important;margin:0 auto 10px!important}.flow-step img{width:48px!important;height:48px!important;object-fit:contain!important;display:block!important}.flow-step{align-items:center!important;text-align:center!important}.flow-arrow{align-self:center!important}
 @media(max-width:900px){.about-grid{grid-template-columns:1fr!important}.about-photo-wrap,.about-copy{grid-column:1!important}.about-copy{grid-row:1!important}.about-photo-wrap{grid-row:2!important}.about-photo{width:82%!important}}
 </style>
+<style id="rc9-layout-fixes">
+/* RC9: preserve the user's supplied crop exactly; no further crop/zoom. */
+.about-photo-wrap{min-height:620px!important;padding:46px 58px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+.about-photo{width:min(100%,470px)!important;height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;object-position:center!important;border-radius:30px!important;margin:0 auto!important;box-shadow:0 20px 52px rgba(62,44,32,.13)!important;-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 96%,transparent 100%)!important;mask-image:linear-gradient(to bottom,transparent 0,#000 4%,#000 96%,transparent 100%)!important}
+/* Chalk notes sit around the subject; arrow glyphs terminate toward face/shoulders/torso. */
+.note-pm{left:-2px!important;top:115px!important;font-size:29px!important;transform:rotate(-8deg)!important}.note-pm b{display:inline-block!important;transform:rotate(8deg)!important}
+.note-ai{right:8px!important;top:90px!important;font-size:25px!important;transform:rotate(7deg)!important}.note-ai b{display:inline-block!important;transform:rotate(-6deg)!important}
+.note-builder{right:-18px!important;top:285px!important;font-size:29px!important;transform:rotate(-5deg)!important}.note-builder b{display:inline-block!important}
+.note-learning{right:16px!important;bottom:82px!important;font-size:24px!important;transform:rotate(7deg)!important}.note-learning b{display:inline-block!important;transform:rotate(-8deg)!important}
+.note-coffee{left:-12px!important;bottom:105px!important;font-size:26px!important;transform:rotate(-8deg)!important}.note-coffee b{display:inline-block!important}
+/* Drink art gets a neutral stage with generous safe area. Never crop generated artwork. */
+.drink-photo,.rec-hero{box-sizing:border-box!important;object-fit:contain!important;object-position:50% 50%!important;background:#fffaf3!important;mix-blend-mode:normal!important;image-rendering:auto!important}
+.drink-photo{height:250px!important;padding:24px 30px!important}.rec-hero{height:390px!important;padding:30px 44px!important;border:1px solid #eadfce!important}
+.media-card{background:#fffaf3!important}.media-card .drink-photo{border-radius:18px 18px 0 0!important}
+@media(max-width:900px){.about-photo-wrap{min-height:auto!important;padding:36px 50px!important}.about-photo{width:min(100%,460px)!important}.drink-photo{height:230px!important;padding:22px 28px!important}}
+@media(max-width:600px){.about-photo-wrap{padding:30px 32px 54px!important}.about-photo{width:100%!important}.chalk-note{font-size:18px!important}.note-pm{left:0!important;top:75px!important}.note-ai{right:0!important;top:58px!important}.note-builder{right:-2px!important;top:235px!important}.note-learning{right:4px!important;bottom:40px!important}.note-coffee{left:0!important;bottom:66px!important}.drink-photo{height:210px!important;padding:20px 24px!important}.rec-hero{height:290px!important;padding:24px!important}}
+</style>
