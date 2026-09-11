@@ -256,6 +256,39 @@ mask-image:radial-gradient(ellipse 82% 90% at center,#000 66%,rgba(0,0,0,.94) 74
 @media(max-width:900px){.landing-nav{padding-left:22px!important;padding-right:22px!important}.landing-logo{width:160px!important;flex-basis:160px!important}.landing-logo .logo-img{width:140px!important}}
 @media(max-width:600px){.landing-nav{padding-left:14px!important;padding-right:14px!important}.landing-logo{width:140px!important;flex-basis:140px!important;height:72px!important}.landing-logo .logo-img{width:124px!important}.how-section .flow-icon{width:58px!important;height:58px!important}.how-section .flow-icon svg{width:42px!important;height:42px!important}}
 </style>
+
+<style id="rc13-14-canonical-fixes">
+/* RC13.14: tighter case-study rhythm, corrected repeat icon, emoji app nav */
+.landing-section{padding-top:64px!important;padding-bottom:64px!important}
+#about{padding-top:58px!important;padding-bottom:62px!important}
+#problem{padding-top:62px!important;padding-bottom:64px!important}
+#product{padding-top:62px!important;padding-bottom:66px!important}
+#process{padding-top:62px!important;padding-bottom:64px!important}
+#why{padding-top:64px!important;padding-bottom:68px!important}
+.problem-usecases{margin-top:30px!important}
+.three-up{margin-top:0!important}
+.how-section .flow{margin-top:30px!important}
+.learning-divider{margin:38px auto!important}
+.learning-story .skills{margin-top:44px!important}
+.closing{padding-top:76px!important;padding-bottom:78px!important}
+.how-section .repeat-doodle{stroke-width:2.9!important}
+.nav .icon{font-size:18px!important;line-height:1!important;width:24px!important;display:inline-grid!important;place-items:center!important}
+@media(max-width:900px){
+ .landing-section{padding-top:56px!important;padding-bottom:56px!important}
+ #about,#problem,#process,#why{padding-top:54px!important;padding-bottom:56px!important}
+ #product{padding-top:54px!important;padding-bottom:58px!important}
+}
+@media(max-width:600px){
+ .landing-section{padding-top:44px!important;padding-bottom:44px!important}
+ #about,#problem,#process,#why{padding-top:42px!important;padding-bottom:44px!important}
+ #product{padding-top:42px!important;padding-bottom:46px!important}
+ .problem-usecases{margin-top:24px!important}
+ .how-section .flow{margin-top:24px!important}
+ .learning-divider{margin:30px auto!important}
+ .learning-story .skills{margin-top:34px!important}
+ .closing{padding-top:58px!important;padding-bottom:60px!important}
+}
+</style>
 </head>
 <body>
 <div class="landing" id="landing">
@@ -273,13 +306,13 @@ mask-image:radial-gradient(ellipse 82% 90% at center,#000 66%,rgba(0,0,0,.94) 74
 <div class="flow-arrow">→</div>
 <div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle"><circle cx="34" cy="34" r="15"/><path d="m45 45 15 15"/><path d="M55 16v8M51 20h8"/><path d="M28 34h12M34 28v12"/></g></svg></span>Discover<small class="flow-note">Get a better match</small></div>
 <div class="flow-arrow">→</div>
-<div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle"><path d="M18 31C27 22 39 19 51 23C55 24 58 26 61 29"/><path d="M51 20L61 29L49 33"/><path d="M62 49C53 58 41 61 29 57C25 56 22 54 19 51"/><path d="M29 60L19 51L31 47"/></g></svg></span>Repeat<small class="flow-note">Improve every time</small></div>
+<div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle repeat-doodle"><path d="M19 32C28 21 49 20 59 31"/><path d="M52 27L59 31L54 38"/><path d="M61 48C52 59 31 60 21 49"/><path d="M28 53L21 49L26 42"/></g></svg></span>Repeat<small class="flow-note">Improve every time</small></div>
 </div></div></section>
 <section class="landing-section alt" id="why"><div class="landing-inner why-box learning-story"><div class="learning-block"><h2>AI will become a core part of how great product managers work</h2><p class="landing-lead">I believe learning to work effectively with AI will make me a better product manager — helping me explore ideas faster, build more independently, and spend more time on the judgment that matters. As these tools become part of everyday product development, I wanted to start building that relationship now rather than wait for the workflow to become standard.</p></div><div class="learning-divider" aria-hidden="true"></div><div class="learning-block"><h2>Excellatte gave me a practical way to learn by building</h2><p class="landing-lead">The product started with a simple question: <strong>Could your coffee history help predict what you’ll enjoy next?</strong> Building Excellatte gave me a practical way to test that idea while learning where AI genuinely accelerates product work, where it needs direction, and where human judgment still matters most.</p></div><div class="skills"><div class="skill"><strong>0 → 1 Product Development</strong><span>Turning an ambiguous concept into a scoped, interactive MVP.</span></div><div class="skill"><strong>AI &amp; Personalization</strong><span>Using ratings, language signals, feedback, and metadata to shape recommendations.</span></div><div class="skill"><strong>Search &amp; Recommendations</strong><span>Exploring ranking, similarity, cold start, feedback loops, and serendipity.</span></div><div class="skill"><strong>Rapid Prototyping</strong><span>Using AI-assisted development to test assumptions and move quickly from idea to interaction.</span></div><div class="skill"><strong>Product Judgment</strong><span>Consciously limiting scope to learn before investing in scale or infrastructure.</span></div><div class="skill"><strong>Customer-Driven Iteration</strong><span>Critiquing each prototype, incorporating feedback, and improving the next version.</span></div></div></div></section>
 <section class="closing" id="try"><div class="eyebrow" style="color:#d5a469">TRY IT YOURSELF</div><h2>What are you in the mood for?</h2><p>Try Excellatte using a sample coffee profile and see how recommendations adapt to your choices.</p><button class="landing-btn" onclick="enterApp()">Try the app →</button></section>
 </div>
 <div class="app-shell" id="appShell"><div class="app"><aside class="sidebar"><div class="brand"><img class="logo-img" src="assets/excellatte-logo.png" alt="Excellatte"></div><p class="tagline">Coffee, according to you.</p><button class="app-back" onclick="exitApp()">← Project &amp; About Kevin</button><nav class="nav">
-<button class="active" data-tab="discover"><span class="icon">☕</span><span>For You</span></button><button data-tab="explore"><span class="icon">⌕</span><span>Explore</span></button><button data-tab="log"><span class="icon">＋</span><span>Log</span></button><button data-tab="social"><span class="icon">◎</span><span>Social</span></button>
+<button class="active" data-tab="discover"><span class="icon">☕</span><span>For You</span></button><button data-tab="explore"><span class="icon">🔍</span><span>Explore</span></button><button data-tab="log"><span class="icon">✍️</span><span>Log</span></button><button data-tab="social"><span class="icon">👥</span><span>Social</span></button>
 </nav><div class="profile-mini"><div class="avatar">KC</div><div><div class="mini-name">Kevin Cao</div><div class="mini-sub" id="miniSub">42 coffees logged</div></div></div></aside><main id="main"></main><aside class="side" id="right"></aside></div></div>
 <div class="modal" id="modal"><div class="modal-card" id="modalCard"></div></div><div class="toast" id="toast"></div>
 <script>
