@@ -302,6 +302,21 @@ mask-image:radial-gradient(ellipse 82% 90% at center,#000 66%,rgba(0,0,0,.94) 74
 @media(max-width:600px){.landing-nav{height:74px!important;padding-left:18px!important}.landing-logo{width:150px!important;flex-basis:150px!important}.landing-logo .logo-img{width:138px!important;height:62px!important}}
 @media(prefers-reduced-motion:reduce){.page-fade{transition:none!important}}
 </style>
+
+<style id="rc13-16-logo-repeat-fix">
+/* RC13.16: make the original logo visually larger/right-shifted; deterministic repeat icon */
+.landing-nav{padding-left:52px!important;padding-right:30px!important;grid-template-columns:250px 1fr!important;}
+.landing-logo{width:250px!important;height:92px!important;justify-content:flex-start!important;}
+.landing-logo .logo-img{width:222px!important;height:82px!important;object-fit:contain!important;object-position:left center!important;margin:0!important;}
+.brand .logo-img{width:176px!important;height:auto!important;object-fit:contain!important;margin:0 0 4px 2px!important;}
+.how-section .repeat-doodle polyline{fill:none!important;stroke:#9b603d!important;stroke-width:2.7!important;stroke-linecap:round!important;stroke-linejoin:round!important;}
+@media(max-width:900px){.landing-nav{padding-left:30px!important;grid-template-columns:210px 1fr!important}.landing-logo{width:210px!important}.landing-logo .logo-img{width:184px!important;height:72px!important}}
+@media(max-width:600px){.landing-nav{padding-left:18px!important;grid-template-columns:160px 1fr!important}.landing-logo{width:160px!important}.landing-logo .logo-img{width:145px!important;height:62px!important}}
+</style>
+<style id="rc13-18-repeat-reference-fix">
+.how-section .repeat-doodle .repeat-arc{fill:none!important;stroke:#9b603d!important;stroke-width:5.2!important;stroke-linecap:round!important;stroke-linejoin:round!important}
+.how-section .repeat-doodle .repeat-head{fill:#9b603d!important;stroke:none!important}
+</style>
 </head>
 <body>
 <div class="page-fade" id="pageFade" aria-hidden="true"></div><div class="landing" id="landing">
@@ -319,7 +334,7 @@ mask-image:radial-gradient(ellipse 82% 90% at center,#000 66%,rgba(0,0,0,.94) 74
 <div class="flow-arrow">→</div>
 <div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle"><circle cx="34" cy="34" r="15"/><path d="m45 45 15 15"/><path d="M55 16v8M51 20h8"/><path d="M28 34h12M34 28v12"/></g></svg></span>Discover<small class="flow-note">Get a better match</small></div>
 <div class="flow-arrow">→</div>
-<div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle repeat-doodle"><path d="M18 33 C27 20, 50 19, 61 31"/><polygon points="61,31 51,27 54,38"/><path d="M62 47 C53 60, 30 61, 19 49"/><polygon points="19,49 29,53 26,42"/></g></svg></span>Repeat<small class="flow-note">Improve every time</small></div>
+<div class="flow-step"><span class="flow-icon"><svg viewBox="0 0 80 80" aria-hidden="true"><g class="doodle repeat-doodle"><path class="repeat-arc" d="M52 24 A22 22 0 0 0 18 40"/><polygon class="repeat-head" points="13,37 23,37 18,47"/><path class="repeat-arc" d="M28 56 A22 22 0 0 0 62 40"/><polygon class="repeat-head" points="57,43 67,43 62,33"/></g></svg></span>Repeat<small class="flow-note">Improve every time</small></div>
 </div></div></section>
 <section class="landing-section alt" id="why"><div class="landing-inner why-box learning-story"><div class="learning-block"><h2>AI will become a core part of how great product managers work</h2><p class="landing-lead">I believe learning to work effectively with AI will make me a better product manager — helping me explore ideas faster, build more independently, and spend more time on the judgment that matters. As these tools become part of everyday product development, I wanted to start building that relationship now rather than wait for the workflow to become standard.</p></div><div class="learning-divider" aria-hidden="true"></div><div class="learning-block"><h2>Excellatte gave me a practical way to learn by building</h2><p class="landing-lead">The product started with a simple question: <strong>Could your coffee history help predict what you’ll enjoy next?</strong> Building Excellatte gave me a practical way to test that idea while learning where AI genuinely accelerates product work, where it needs direction, and where human judgment still matters most.</p></div><div class="skills"><div class="skill"><strong>0 → 1 Product Development</strong><span>Turning an ambiguous concept into a scoped, interactive MVP.</span></div><div class="skill"><strong>AI &amp; Personalization</strong><span>Using ratings, language signals, feedback, and metadata to shape recommendations.</span></div><div class="skill"><strong>Search &amp; Recommendations</strong><span>Exploring ranking, similarity, cold start, feedback loops, and serendipity.</span></div><div class="skill"><strong>Rapid Prototyping</strong><span>Using AI-assisted development to test assumptions and move quickly from idea to interaction.</span></div><div class="skill"><strong>Product Judgment</strong><span>Consciously limiting scope to learn before investing in scale or infrastructure.</span></div><div class="skill"><strong>Customer-Driven Iteration</strong><span>Critiquing each prototype, incorporating feedback, and improving the next version.</span></div></div></div></section>
 <section class="closing" id="try"><div class="eyebrow" style="color:#d5a469">TRY IT YOURSELF</div><h2>What are you in the mood for?</h2><p>Try Excellatte using a sample coffee profile and see how recommendations adapt to your choices.</p><button class="landing-btn" onclick="enterApp()">Try the app →</button></section>
